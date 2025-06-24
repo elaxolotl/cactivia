@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Chewy } from "next/font/google";
-import Link from "next/link";
+import Nav from "./nav";
 
 import "./globals.css";
 
@@ -29,10 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} ${chewy.variable}`}>{children}
-        <nav>
-          <Link href="/">Home</Link>
-        </nav>
+      <body className={`${geistSans.className} ${chewy.variable}`}>
+        <Nav/>
+        {children}
       </body>
     </html>
   );

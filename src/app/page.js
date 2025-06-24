@@ -34,11 +34,6 @@ export default function Home() {
 
       <main className="text-center py-[20vh] flex flex-col items-center bg-[#daa547] px-[15vw] w-full">
 
-        {/* <span className="text-sm font-semibold font-medium text-black bg-white/20 backdrop-blur-md rounded-full shadow-sm flex items-center gap-2 w-fit px-2 py-1">
-          <Image src="/leaf-icon.png" alt="leaf icon" width={20} height={20} />
-          SUSTAINABLE PRODUCT
-        </span> */}
-
         <h3 className="text-sm">Treat Your Plants With Care</h3>
         <h1 className="text-2xl sm:text-7xl text-black font-black mt-2">
           Cactivia is your go-to solution for protecting prickly pears from the cochineal insect.
