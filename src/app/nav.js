@@ -40,17 +40,17 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
-              Products
+            <Link href="/our-product" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
+              Our Product
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
+            <Link href="/about-us" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
               About Us
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
+            <Link href="/contact-us" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
               Contact Us
             </Link>
           </li>

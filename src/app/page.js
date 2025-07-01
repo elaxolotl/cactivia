@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Nav from "./nav";
 import { FaCircleArrowDown, FaCircleCheck, FaLeaf } from "react-icons/fa6";
 import { MdReportProblem } from "react-icons/md";
 import { FaTree } from "react-icons/fa";
@@ -30,27 +29,6 @@ export default function Home() {
     }
   ];
 
-  let products = [
-    {
-      id: 1,
-      name: "Cactivia Original",
-      image: "/productA.jpg",
-      price: "19.99 TND",
-    },
-    {
-      id: 2,
-      name: "Cactivia Spray",
-      image: "/productA.jpg",
-      price: "12.99 TND",
-    },
-    {
-      id: 3,
-      name: "Cactivia Plus",
-      image: "/productA.jpg",
-      price: "24.99 TND",
-    },
-  ];
-
   return (
     <div className="bg-[#daa547]">
 
@@ -77,26 +55,25 @@ export default function Home() {
 
       </main>
 
-      {/* products */}
+      {/* product */}
 
-      <div className="flex flex-col items-center gap-5 mt-10 text-black">
-        <h2 className="font-bold">Products Listing</h2>
-
-        {products.map((product) => (
-          <div key={product.id} className="bg-[#ebbc6a] rounded-xl shadow-[0_7px_0_0_black] p-2 flex items-center justify-between gap-2 w-[80vw]">
-            <div className="flex items-center gap-4">
-              <Image src={product.image} alt={product.name} width={50} height={50} className="rounded-xl" />
-              <div className="flex flex-col items-start">
-                <h3 className="text-lg font-semibold">{product.name}</h3>
-                <span className="text-sm opacity-75 font-bold">{product.price}</span>
-              </div>
-            </div>
-            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2">
-              Buy
-            </button>
+      <div className="flex flex-col items-center mt-10 text-black mx-[10vw]">
+        <h2 className="font-bold">Our Product</h2>
+        <div className="flex flex-col items-center gap-4">
+          <Image src="/packaging-product.jpg" alt="cactivia" width={300} height={300} className="my-4 shadow-[0_7px_0_0_black] rounded-xl" />
+          <div>
+            <h3 className="text-lg font-semibold">Cactivia</h3>
+            <span className="text-sm opacity-75 font-bold">12.50 TND</span>
           </div>
-        ))}
-
+        </div>
+        <div className="flex items-center gap-4">
+          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2">
+            Buy
+          </button>
+          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[10px] text-black mt-2">
+            Learn More
+          </button>
+        </div>
       </div>
 
       {/* problem & solution */}
@@ -124,8 +101,8 @@ export default function Home() {
             <p className="text-sm opacity-70 mt-2">
               Our product offers a fast, effective, and environmentally safe way to eliminate the cochineal insect threatening prickly pear crops.
             </p>
-          
-            <Image src={"/packaging.jpg"} width={500} height={500} className="my-4 shadow-[0_7px_0_0_black] rounded-xl"/>
+
+            <Image src={"/packaging.jpg"} width={500} height={500} className="my-4 shadow-[0_7px_0_0_black] rounded-xl" />
 
           </div>
 
