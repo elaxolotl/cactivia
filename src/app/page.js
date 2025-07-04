@@ -1,13 +1,17 @@
+"use client";
 import Image from "next/image";
 import { FaCircleArrowDown, FaCircleCheck, FaLeaf } from "react-icons/fa6";
 import { MdReportProblem } from "react-icons/md";
 import { FaTree } from "react-icons/fa";
 import Contact from "./contact";
 import Footer from "./footer";
+import { useRouter } from "next/navigation";
 
 
 
 export default function Home() {
+  const router = useRouter();
+
   let specialTraitrs = [
     {
       id: 1,
@@ -41,14 +45,16 @@ export default function Home() {
           </h1>
 
           <div className="flex flex-row gap-4 mt-4">
-
-            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2">
-              See More <FaCircleArrowDown />
-            </button>
-
-            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px]">
-              Contact Us
-            </button>
+            <a href="#our-product">
+              <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2 active:bg-[#4a5d0a]">
+                See More <FaCircleArrowDown />
+              </button>
+            </a>
+            <a href="#contact">
+              <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px] active:bg-white/20">
+                Contact Us
+              </button>
+            </a>
 
           </div>
         </div>
@@ -57,7 +63,7 @@ export default function Home() {
 
       {/* product */}
 
-      <div className="flex flex-col items-center mt-10 text-black mx-[10vw]">
+      <div className="flex flex-col items-center mt-10 text-black mx-[10vw]" id="our-product">
         <h2 className="font-bold">Our Product</h2>
         <div className="flex flex-col items-center gap-4">
           <Image src="/packaging-product.jpg" alt="cactivia" width={300} height={300} className="my-4 shadow-[0_7px_0_0_black] rounded-xl" />
@@ -67,12 +73,16 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2">
-            Buy
-          </button>
-          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[10px] text-black mt-2">
-            Learn More
-          </button>
+          <a onClick={() => router.push('/our-product')}>
+            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2 active:bg-[#4a5d0a]">
+              Buy
+            </button>
+          </a>
+          <a onClick={() => router.push('/our-product')}>
+            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[10px] text-black mt-2 active:bg-white/20">
+              Learn More
+            </button>
+          </a>
         </div>
       </div>
 
@@ -108,10 +118,11 @@ export default function Home() {
 
         </div>
 
-        <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black">
-          See Our Products
-        </button>
-
+        <a onClick={() => router.push('/our-product')}>
+          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black act">
+            See Our Product
+          </button>
+        </a>
       </div>
 
       {/* what makes cactivia special */}
@@ -134,7 +145,9 @@ export default function Home() {
 
       </div>
 
-      <Contact />
+      <div id="contact">
+        <Contact />
+      </div>
 
       <Footer />
 

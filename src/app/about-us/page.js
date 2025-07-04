@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaCircleArrowDown} from "react-icons/fa6";
+import { FaCircleArrowDown } from "react-icons/fa6";
 import Contact from "../contact";
 import Footer from "../footer";
 
@@ -20,13 +20,17 @@ export default function AboutUs() {
 
                     <div className="flex flex-row gap-4 mt-4">
 
-                        <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2">
-                            See More <FaCircleArrowDown />
-                        </button>
+                        <a href="#content">
+                            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2 active:bg-[#4a5d0a]">
+                                See More <FaCircleArrowDown />
+                            </button>
+                        </a>
 
-                        <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px]">
-                            Contact Us
-                        </button>
+                        <a href="#contact">
+                            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px] active:bg-white/20">
+                                Contact Us
+                            </button>
+                        </a>
 
                     </div>
                 </div>
@@ -35,7 +39,7 @@ export default function AboutUs() {
 
             {/* how cactivia came to life */}
 
-            <div className="flex flex-col items-center mt-10 text-black mx-[10vw]">
+            <div className="flex flex-col items-center mt-10 text-black mx-[10vw]" id="content">
                 <h2 className="font-bold mb-2">How Cactivia Came to Life</h2>
                 <div className="flex flex-col items-center gap-4">
                     <p className="text-center opacity-75"> Born out of a competition within the 3ZERO TBS club, our mission is to create eco-friendly and natural formulation for the cochineal insect
@@ -57,8 +61,9 @@ export default function AboutUs() {
                 </div>
             </div>
 
-
-            <Contact />
+            <div id="contact">
+                <Contact />
+            </div>
 
             <Footer />
 

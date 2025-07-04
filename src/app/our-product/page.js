@@ -10,7 +10,7 @@ export default function Home() {
 
             <main className="text-center py-[20vh] flex flex-col items-center px-[15vw] w-full h-[90vh]">
 
-                <div className="bg-white/20 backdrop-blur-md rounded-xl shadow-[0_7px_0_0_black] p-4 flex flex-col items-center gap-2 w-full max-w-3xl mt-auto">
+                <div className="bg-[url('/product-image.jpg')] rounded-xl shadow-[0_7px_0_0_black] p-4 flex flex-col items-center gap-2 w-full max-w-3xl mt-auto bg-cover bg-center bg-no-repeat">
                     <h3 className="text-sm">Our Story</h3>
                     <h1 className="text-2xl sm:text-7xl text-black font-black mt-2">
                         We are a team of passionate individuals united by our commitment to sustainability.
