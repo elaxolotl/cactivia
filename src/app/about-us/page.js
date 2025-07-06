@@ -8,7 +8,7 @@ import Footer from "../footer";
 export default function AboutUs() {
 
     return (
-        <div className="bg-[#daa547]">
+        <div className="bg-white">
 
             <main className="text-center py-[20vh] flex flex-col items-center px-[15vw] w-full bg-[url('/about-us.jpg')] bg-cover bg-center bg-no-repeat h-[90vh]">
 

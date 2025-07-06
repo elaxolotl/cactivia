@@ -34,7 +34,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-[#daa547]">
+    <div className="bg-[#ededed]">
 
       <main className="text-center py-[20vh] flex flex-col items-center px-[15vw] w-full bg-[url('/solution-img.jpg')] bg-cover bg-center bg-no-repeat h-[90vh]">
 
@@ -133,7 +133,7 @@ export default function Home() {
           <h2 className="font-bold mb-2">What Makes Cactivia Special</h2>
           {specialTraitrs.map((trait) => (
             <div key={trait.id} className="flex item-center gap-4 mx-2">
-              <div className="text-2xl p-5 bg-[#ebbc6a] rounded-xl text-[#59760b]">{trait.icon}</div>
+              <div className="text-2xl p-5 bg-[#d1d1d1] rounded-xl text-[#59760b]">{trait.icon}</div>
               <div>
                 <h3 className="font-semibold">{trait.name}</h3>
                 <p className="text-sm opacity-75">{trait.description}</p>
