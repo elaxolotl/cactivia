@@ -34,24 +34,24 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-[#ededed]">
+    <div className="bg-[#ededed] overflow-x-hidden">
 
-      <main className="text-center py-[20vh] flex flex-col items-center px-[15vw] w-full bg-[url('/solution-img.jpg')] bg-cover bg-center bg-no-repeat h-[90vh]">
+      <main className="text-center py-[20vh] flex flex-col items-center px-[15vw] w-full bg-[url('/solution-img.jpg')] bg-cover bg-center bg-no-repeat h-[90vh] sm:h-[100vh]">
 
-        <div className="bg-white/20 backdrop-blur-md rounded-xl shadow-[0_7px_0_0_black] p-4 flex flex-col items-center gap-2 w-full max-w-3xl mt-auto">
+        <div className="bg-white/20 backdrop-blur-md rounded-xl shadow-[0_7px_0_0_black] p-4 sm:py-15 flex flex-col items-center gap-2 w-full max-w-3xl mt-auto sm:mt-5">
           <h3 className="text-sm">Treat Your Plants With Care</h3>
-          <h1 className="text-2xl sm:text-7xl text-black font-black mt-2">
+          <h1 className="text-2xl sm:text-5xl text-black font-black mt-2 sm:mt-0c">
             Cactivia is your go-to solution for protecting prickly pears from the cochineal insect.
           </h1>
 
           <div className="flex flex-row gap-4 mt-4">
             <a href="#our-product">
-              <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2 active:bg-[#4a5d0a]">
+              <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2 active:bg-[#4a5d0a] cursor-pointer hover:bg-[#4a5d0a]">
                 See More <FaCircleArrowDown />
               </button>
             </a>
             <a href="#contact">
-              <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px] active:bg-white/20">
+              <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px] active:bg-white/20 cursor-pointer hover:bg-white/40">
                 Contact Us
               </button>
             </a>
@@ -64,9 +64,9 @@ export default function Home() {
       {/* product */}
 
       <div className="flex flex-col items-center mt-10 text-black mx-[10vw]" id="our-product">
-        <h2 className="font-bold">Our Product</h2>
+        <h2 className="font-bold sm:text-2xl">Our Product</h2>
         <div className="flex flex-col items-center gap-4">
-          <Image src="/packaging-product.jpg" alt="cactivia" width={300} height={300} className="my-4 shadow-[0_7px_0_0_black] rounded-xl" />
+          <Image src="/packaging-product.jpg" alt="cactivia" width={300} height={300} className="my-4 shadow-[0_7px_0_0_black] rounded-xl sm:h-[60vh] sm:w-auto" />
           <div>
             <h3 className="text-lg font-semibold">Cactivia</h3>
             <span className="text-sm opacity-75 font-bold">12.50 TND</span>
@@ -74,12 +74,12 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-4">
           <a onClick={() => router.push('/our-product')}>
-            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2 active:bg-[#4a5d0a]">
+            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2 active:bg-[#4a5d0a] cursor-pointer hover:bg-[#4a5d0a]">
               Buy
             </button>
           </a>
           <a onClick={() => router.push('/our-product')}>
-            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[10px] text-black mt-2 active:bg-white/20">
+            <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[10px] text-black mt-2 active:bg-white/20 cursor-pointer hover:bg-white/40">
               Learn More
             </button>
           </a>
@@ -88,10 +88,10 @@ export default function Home() {
 
       {/* problem & solution */}
 
-      <div className="flex flex-col items-center gap-5 mt-10 text-white">
+      <div className="flex flex-col items-center gap-5 mt-10 text-white sm:w-[100vw]">
 
-        <div className="bg-[url('/problem-img.jpg')] bg-cover bg-center bg-no-repeat">
-          <div className="flex flex-col gap-2 bg-[#59760b] opacity-90 px-10 py-4">
+        <div className="bg-[url('/problem-img.jpg')] bg-cover bg-center bg-no-repeat sm:w-full ">
+          <div className="flex flex-col gap-2 bg-[#59760b] opacity-90 px-10 py-4 sm:justify-center sm:items-center">
 
             <div className="flex items-center gap-2">
               <MdReportProblem />
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
 
         <a onClick={() => router.push('/our-product')}>
-          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black act">
+          <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black act cursor-pointer hover:bg-[#4a5d0a]">
             See Our Product
           </button>
         </a>
@@ -129,10 +129,10 @@ export default function Home() {
 
       <div className="flex flex-col items-center gap-5">
 
-        <div className="px-4 py-4 flex flex-col items-center gap-2 mx-[10vw] mt-10">
+        <div className="px-4 py-4 flex flex-col gap-2 mx-[10vw] mt-10">
           <h2 className="font-bold mb-2">What Makes Cactivia Special</h2>
           {specialTraitrs.map((trait) => (
-            <div key={trait.id} className="flex item-center gap-4 mx-2">
+            <div key={trait.id} className="flex item-start justify-start gap-4 mx-2">
               <div className="text-2xl p-5 bg-[#d1d1d1] rounded-xl text-[#59760b]">{trait.icon}</div>
               <div>
                 <h3 className="font-semibold">{trait.name}</h3>

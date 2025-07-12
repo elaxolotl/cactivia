@@ -7,8 +7,8 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-99 h-[10vw] py-6 bg-white/20 backdrop-blur-md shadow-md border-b border-black/10">
-      <div className="container mx-auto flex justify-between items-center mt-[-3vh]">
+    <nav className="fixed top-0 w-full z-99 h-[10vw] sm:h-[10vh] py-6 sm:py-10 bg-white/20 backdrop-blur-md shadow-md border-b border-black/10">
+      <div className="container mx-auto flex justify-between sm:justify-around items-center mt-[-3vh]">
 
         {/* Logo */}
         <Link href="/" className="text-lg font-semibold text-black ml-4">
