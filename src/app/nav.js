@@ -28,11 +28,10 @@ export default function Nav() {
 
         {/* Menu */}
         <ul
-          className={`flex space-x-6 sm:flex ${
-            menuOpen
+          className={`flex space-x-6 sm:flex ${menuOpen
               ? "flex flex-col absolute top-[20vw] left-[50%] rounded-xl z-50 gap-7 px-4 py-6 bg-white/20 backdrop-blur-md shadow-sm"
               : "hidden"
-          } sm:static sm:flex-row sm:bg-transparent sm:space-x-6`}
+            } sm:static sm:flex-row sm:bg-transparent sm:space-x-6`}
         >
           <li>
             <Link href="/" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
@@ -50,7 +49,8 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="/contact-us" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
+            <Link href="#contact"
+              scroll={true} className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
               Contact Us
             </Link>
           </li>
