@@ -14,7 +14,7 @@ export default function Home() {
             image: "/prod1L.jpeg",
             price: "12.900TND",
             size: "1L",
-            description: "Une solution puissante et écologique 5x concentrée conçue pour protéger les cultures de figues de Barbarie contre l'insecte dévastateur de la cochenille."
+            description: "Une solution puissante et écologique conçue pour protéger les cultures de figues de Barbarie contre l'insecte dévastateur de la cochenille."
         }
     ]
 
@@ -23,7 +23,7 @@ export default function Home() {
             id: 1,
             icon: <FaFlask size={30} />,
             title: "Préparation du mélange",
-            description: "Mélanger 1 L de Cactivia avec 100 L d’eau"
+            description: "Mélanger 1 L de Cactivia dans 100 L d’eau"
         },
         {
             id: 2,
@@ -41,7 +41,7 @@ export default function Home() {
             id: 4,
             icon: <FaRedo size={30} />,
             title: "Répétition",
-            description: "Répéter après 4 à 5 jours si nécessaire"
+            description: "Répéter après 4 à 5 jours"
         }
     ];
 
@@ -62,7 +62,7 @@ export default function Home() {
                             <div className="flex sm:flex-row items-center justify-between gap-4 mb-2">
                                 <h3 className="font-bold">{product.price}</h3>
                                 <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black hover:bg-[#4a5d0a] cursor-pointer">
-                                    Buy
+                                    Acheter
                                 </button>
                             </div>
                             <p className="text-sm opacity-70">{product.description}</p>
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col items-center mt-10 text-black mb-10">
-                <h2 className="text-lg font-bold">How to use Cactivia</h2>
+                <h2 className="text-lg font-bold">Mode d'utilisation</h2>
 
                 <div className="flex flex-col sm:flex-row gap-6 mt-8">
                     {steps.map((step, index) => (

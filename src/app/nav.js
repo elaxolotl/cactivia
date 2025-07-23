@@ -29,7 +29,7 @@ export default function Nav() {
         {/* Menu */}
         <ul
           className={`flex space-x-6 sm:flex ${menuOpen
-              ? "flex flex-col absolute top-[20vw] left-[50%] rounded-xl z-50 gap-7 px-4 py-6 bg-white/20 backdrop-blur-md shadow-sm"
+              ? "flex flex-col absolute w-[60vw] top-[20vw] left-[35%] rounded-xl z-50 gap-7 px-4 py-6 bg-white/20 backdrop-blur-md shadow-sm"
               : "hidden"
             } sm:static sm:flex-row sm:bg-transparent sm:space-x-6`}
         >
