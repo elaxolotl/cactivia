@@ -14,7 +14,7 @@ export default function Home() {
             image: "/prod1L.jpeg",
             price: "12.900TND",
             size: "1L",
-            description: "A powerful 5x concentrated, eco-friendly solution crafted to protect prickly pear crops from the devastating cochineal insect."
+            description: "Une solution puissante et écologique 5x concentrée conçue pour protéger les cultures de figues de Barbarie contre l'insecte dévastateur de la cochenille."
         }
     ]
 
