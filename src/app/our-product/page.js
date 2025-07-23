@@ -12,14 +12,6 @@ export default function Home() {
         {
             id: 1,
             name: "Cactivia",
-            image: "/prod5L.jpeg",
-            price: "62.900TND",
-            size: "5L",
-            description: "A powerful 5x concentrated, eco-friendly solution crafted to protect prickly pear crops from the devastating cochineal insect."
-        },
-        {
-            id: 2,
-            name: "Cactivia",
             image: "/prod1L.jpeg",
             price: "12.900TND",
             size: "1L",
