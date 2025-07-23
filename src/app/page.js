@@ -109,7 +109,7 @@ export default function Home() {
             <p className="text-sm opacity-70 mt-2">
               Notre produit offre un moyen rapide, efficace et respectueux de l’environnement pour éliminer l’insecte cochenille qui menace les cultures de figues de Barbarie.
             </p>
-            <Image src={"/package-photo.png"} width={200} height={200} className="my-4 mx-auto shadow-[0_7px_0_0_black] rounded-xl" />
+            <Image src={"/package-photo.jpg"} width={200} height={200} className="my-4 mx-auto shadow-[0_7px_0_0_black] rounded-xl" />
 
           </div>
 
