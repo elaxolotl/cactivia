@@ -1,8 +1,7 @@
 import Contact from "../contact";
 import Footer from "../footer";
-import { FaWater } from "react-icons/fa";
-import { FaSprayCanSparkles } from "react-icons/fa6";
-import { IoIosPartlySunny } from "react-icons/io";
+import { FaFlask, FaSprayCan, FaClock, FaRedo } from "react-icons/fa";
+
 
 
 
@@ -22,22 +21,28 @@ export default function Home() {
     const steps = [
         {
             id: 1,
-            icon: <FaWater size={30} />,
-            title: "Dilute with water",
-            description: "Dilute 200 ml of concentrate in 800 ml of water"
+            icon: <FaFlask size={30} />,
+            title: "Préparation du mélange",
+            description: "Mélanger 1 L de Cactivia avec 100 L d’eau"
         },
         {
             id: 2,
-            icon: <FaSprayCanSparkles size={30} />,
-            title: "Spray",
-            description: "Spray directly on both sides of leaves, stems, and fruits"
+            icon: <FaSprayCan size={30} />,
+            title: "Pulvérisation",
+            description: "Pulvériser sur les raquettes infectées (recto-verso)"
         },
         {
             id: 3,
-            icon: <IoIosPartlySunny size={30} />,
-            title: "Know when to apply",
-            description: "Use in the early morning or late afternoon for best results"
+            icon: <FaClock size={30} />,
+            title: "Moment d'application",
+            description: "Appliquer tôt le matin ou en fin d’après-midi"
         },
+        {
+            id: 4,
+            icon: <FaRedo size={30} />,
+            title: "Répétition",
+            description: "Répéter après 4 à 5 jours si nécessaire"
+        }
     ];
 
 
