@@ -15,20 +15,20 @@ export default function Home() {
   let specialTraitrs = [
     {
       id: 1,
-      name: "Eco-Friendly",
-      description: "Made from natural ingredients.",
+      name: "Écologique",
+      description: "Fabriqué à partir d'ingrédients naturels.",
       icon: <FaTree />,
     },
     {
       id: 2,
-      name: "Effective",
-      description: "Helps cure the cochineal insect naturally.",
+      name: "Efficace",
+      description: "Aide à guérir naturellement la cochenille.",
       icon: <FaCircleCheck />,
     },
     {
       id: 3,
-      name: "Sustainable",
-      description: "Promotes eco-friendly gardening.",
+      name: "Durable",
+      description: "Favorise le jardinage écologique.",
       icon: <FaLeaf />,
     }
   ];
@@ -39,20 +39,20 @@ export default function Home() {
       <main className="text-center py-[20vh] flex flex-col items-center px-[15vw] w-full bg-[url('/solution-img.jpg')] bg-cover bg-center bg-no-repeat h-[90vh] sm:h-[100vh]">
 
         <div className="bg-white/20 backdrop-blur-md rounded-xl shadow-[0_7px_0_0_black] p-4 sm:py-15 flex flex-col items-center gap-2 w-full max-w-3xl mt-auto sm:mt-5">
-          <h3 className="text-sm">Treat Your Plants With Care</h3>
+          <h3 className="text-sm">Traitez vos plantes avec soin</h3>
           <h1 className="text-2xl sm:text-5xl text-black font-black mt-2 sm:mt-0c">
-            Cactivia is your go-to solution for protecting prickly pears from the cochineal insect.
+            Cactivia est votre solution idéale pour protéger les figues de Barbarie de l'insecte cochenille.
           </h1>
 
           <div className="flex flex-row gap-4 mt-4">
             <a href="#our-product">
               <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[5px] flex items-center gap-2 active:bg-[#4a5d0a] cursor-pointer hover:bg-[#4a5d0a]">
-                See More <FaCircleArrowDown />
+                Voir Plus <FaCircleArrowDown />
               </button>
             </a>
             <a href="#contact">
               <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[5px] active:bg-white/20 cursor-pointer hover:bg-white/40">
-                Contact Us
+                Contactez-nous
               </button>
             </a>
 
@@ -64,7 +64,7 @@ export default function Home() {
       {/* product */}
 
       <div className="flex flex-col items-center mt-10 text-black mx-[10vw]" id="our-product">
-        <h2 className="font-bold sm:text-2xl">Our Product</h2>
+        <h2 className="font-bold sm:text-2xl">Notre Produit</h2>
         <div className="flex flex-col items-center gap-4">
           <Image src="/packaging-product.jpg" alt="cactivia" width={300} height={300} className="my-4 shadow-[0_7px_0_0_black] rounded-xl sm:h-[60vh] sm:w-auto" />
           <div>
@@ -75,12 +75,12 @@ export default function Home() {
         <div className="flex items-center gap-4">
           <a onClick={() => router.push('/our-product')}>
             <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black mt-2 active:bg-[#4a5d0a] cursor-pointer hover:bg-[#4a5d0a]">
-              Buy
+              Acheter
             </button>
           </a>
           <a onClick={() => router.push('/our-product')}>
             <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-transparent font-medium px-[10px] text-black mt-2 active:bg-white/20 cursor-pointer hover:bg-white/40">
-              Learn More
+              Apprendre encore plus
             </button>
           </a>
         </div>
@@ -95,24 +95,21 @@ export default function Home() {
 
             <div className="flex items-center gap-2">
               <MdReportProblem />
-              <h2 className="font-bold">The Problem</h2>
+              <h2 className="font-bold">Le problème</h2>
             </div>
 
             <p className="text-sm opacity-70 mt-2">
-              The cochineal insect is spreading fast across Tunisia, destroying prickly pear plants by sucking the sap and weakening entire crops.
+              L'insecte cochenille se propage rapidement à travers la Tunisie, détruisant les figues de Barbarie en suçant la sève et affaiblissant des cultures entières.
             </p>
-
-
             <div className="flex items-center gap-2 mt-2">
               <FaCircleCheck />
-              <h2 className="font-bold">Our solution</h2>
+              <h2 className="font-bold">Notre solution</h2>
             </div>
 
             <p className="text-sm opacity-70 mt-2">
-              Our product offers a fast, effective, and environmentally safe way to eliminate the cochineal insect threatening prickly pear crops.
+              Notre produit offre un moyen rapide, efficace et respectueux de l’environnement pour éliminer l’insecte cochenille qui menace les cultures de figues de Barbarie.
             </p>
-
-            <Image src={"/packaging.jpg"} width={500} height={500} className="my-4 shadow-[0_7px_0_0_black] rounded-xl" />
+            <Image src={"/package-photo.png"} width={200} height={200} className="my-4 shadow-[0_7px_0_0_black] rounded-xl" />
 
           </div>
 
@@ -120,7 +117,7 @@ export default function Home() {
 
         <a onClick={() => router.push('/our-product')}>
           <button className="rounded-full border border-black border-3 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] font-medium px-[10px] text-black act cursor-pointer hover:bg-[#4a5d0a]">
-            See Our Product
+            Voir notre produit
           </button>
         </a>
       </div>
@@ -130,7 +127,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-5">
 
         <div className="px-4 py-4 flex flex-col gap-2 mx-[10vw] mt-10">
-          <h2 className="font-bold mb-2">What Makes Cactivia Special</h2>
+          <h2 className="font-bold mb-2">Ce qui rend Cactivia spécial</h2>
           {specialTraitrs.map((trait) => (
             <div key={trait.id} className="flex item-start justify-start gap-4 mx-2">
               <div className="text-2xl p-5 bg-[#d1d1d1] rounded-xl text-[#59760b]">{trait.icon}</div>

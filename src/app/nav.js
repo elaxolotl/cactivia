@@ -35,23 +35,23 @@ export default function Nav() {
         >
           <li>
             <Link href="/" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
-              Home
+              Accueil
             </Link>
           </li>
           <li>
             <Link href="/our-product" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
-              Our Product
+              Notre produit
             </Link>
           </li>
           <li>
             <Link href="/about-us" className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#52030c] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
-              About Us
+              À propos de nous
             </Link>
           </li>
           <li>
             <Link href="#contact"
               scroll={true} className="text-white rounded-full border border-black border-2 shadow-[0_5px_0_0_black] transition-colors bg-[#59760b] text-background hover:bg-[#59760b] font-large sm:text-base h-10 sm:h-12 px-4 sm:w-auto mx-auto sm:mx-0 cursor-pointer">
-              Contact Us
+              Contactez-nous
             </Link>
           </li>
         </ul>
