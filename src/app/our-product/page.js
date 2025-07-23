@@ -12,7 +12,7 @@ export default function Home() {
             id: 1,
             name: "Cactivia",
             image: "/prod1L.jpeg",
-            price: "12.900TND",
+            price: "62.900TND",
             size: "1L",
             description: "Une solution puissante et écologique conçue pour protéger les cultures de figues de Barbarie contre l'insecte dévastateur de la cochenille."
         }
@@ -49,15 +49,15 @@ export default function Home() {
     return (
         <div className="bg-[#F6F6F6]">
 
-            <div className="flex flex-wrap justify-center gap-8 p-4 my-[10vh]">
+            <div className="flex flex-wrap justify-center gap-8 p-4 sm:my-[10vh] my-[5vh]">
                 {products.map((product) => (
-                    <div key={product.name} className="flex flex-col items-center max-w-[30vw]">
+                    <div key={product.name} className="flex flex-col items-center">
                         <img
                             src={product.image}
                             alt={product.name}
-                            className="w-[30vw] h-auto object-cover rounded-xl shadow-lg"
+                            className="w-[60vw] h-auto object-cover rounded-xl shadow-lg sm:w-[30vw]"
                         />
-                        <div className="bg-[#d1d1d1]/20 backdrop-blur-md rounded-xl shadow-[0_7px_0_0_black] p-4 mt-4 w-full">
+                        <div className="bg-[#d1d1d1]/20 backdrop-blur-md rounded-xl shadow-[0_7px_0_0_black] p-4 mt-4 w-[60vw] sm:w-[30vw]">
                             <h3 className="text-lg font-bold">{product.name}</h3>
                             <div className="flex sm:flex-row items-center justify-between gap-4 mb-2">
                                 <h3 className="font-bold">{product.price}</h3>
@@ -74,7 +74,7 @@ export default function Home() {
             <div className="flex flex-col items-center mt-10 text-black mb-10">
                 <h2 className="text-lg font-bold">Mode d'utilisation</h2>
 
-                <div className="flex flex-col sm:flex-row gap-6 mt-8">
+                <div className="flex flex-col items-center justify-center sm:flex-row gap-6 mt-8 mx-[10vw]">
                     {steps.map((step, index) => (
                         <div
                             key={step.id}
